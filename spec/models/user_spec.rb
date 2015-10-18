@@ -2,5 +2,5 @@ require 'rails_helper'
 
 RSpec.describe User, type: :model do
     it { should validate_uniqueness_of :email }
-    it { should belong_to :project }
+    it { should have_and_belong_to_many :project }
 end

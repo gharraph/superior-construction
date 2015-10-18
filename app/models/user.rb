@@ -1,4 +1,4 @@
 class User < ActiveRecord::Base
   validates :name, :email, presence: true, uniqueness: true
-  belongs_to :project
+  has_and_belongs_to_many :project
 end
