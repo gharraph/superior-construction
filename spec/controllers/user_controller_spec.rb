@@ -14,5 +14,13 @@ RSpec.describe UsersController, type: :controller do
       expect(@user.name).to  eq "different name"
     end
 
+    it "does not allow duplicate emails" do
+      another_user = FactoryGirl.build(:user, :email => "Doe@email.com")
+
+      another_user.save
+
+      another_user.should_not be_valid
+    end
+
   end
 end
