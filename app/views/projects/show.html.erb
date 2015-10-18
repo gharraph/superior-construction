@@ -1,0 +1,12 @@
+<div class="center hero-unit">
+  <%= @project.name %>
+
+  <% if @project.users.any? %>
+      <h3>Users (<%= @project.users.count %>)</h3>
+      <ul class="users">
+        <%= render @users %>
+      </ul>
+      <%= will_paginate @users %>
+  <% end %>
+
+</div>

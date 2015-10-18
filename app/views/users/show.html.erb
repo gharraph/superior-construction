@@ -1,4 +1,13 @@
 <div class="center hero-unit">
   <%= @user.name %>
   <%= link_to "edit name", edit_user_path(@user) %>
+
+  <% if @user.projects.any? %>
+      <h3>Projects (<%= @user.projects.count %>)</h3>
+      <ul class="projects">
+        <%= render @projects %>
+      </ul>
+      <%= will_paginate @projects %>
+  <% end %>
+
 </div>
