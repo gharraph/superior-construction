@@ -9,4 +9,12 @@
       <%= will_paginate @users %>
   <% end %>
 
+  <% if @project.materials.any? %>
+      <h3>Materials needed:</h3>
+      <ul class="materials">
+        <%= render @materials %>
+      </ul>
+      <%= will_paginate @users %>
+  <% end %>
+
 </div>

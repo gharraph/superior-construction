@@ -8,4 +8,8 @@ FactoryGirl.define do
     name "cool project"
     description "the coolest project ever"
   end
+
+  factory :material do
+    name "brush"
+  end
 end

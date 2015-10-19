@@ -57,3 +57,16 @@ user13.projects << project2
 user14.projects << project1
 user1.projects << project3
 user15.projects << project1
+
+Material.find_or_create_by(name: "paper", project_id: 1)
+Material.find_or_create_by(name: "paper", project_id: 2)
+Material.find_or_create_by(name: "paper", project_id: 3)
+Material.find_or_create_by(name: "computer", project_id: 1)
+Material.find_or_create_by(name: "keyboard", project_id: 1)
+Material.find_or_create_by(name: "mouse", project_id: 1)
+Material.find_or_create_by(name: "post_it", project_id: 1)
+Material.find_or_create_by(name: "white board", project_id: 1)
+Material.find_or_create_by(name: "desk", project_id: 1)
+Material.find_or_create_by(name: "lighting", project_id: 1)
+Material.find_or_create_by(name: "mouse", project_id: 2)
+Material.find_or_create_by(name: "mouse", project_id: 3)
