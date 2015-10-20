@@ -9,6 +9,8 @@
 $ bundle install
 $ rake db:migrate
 $ rake db:seed
+$ rake users:import_projects_users
+$ rake materials:import
 ```
 3. Run the Server
 

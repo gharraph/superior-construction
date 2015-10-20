@@ -1,6 +1,6 @@
-namespace :user do
+namespace :users do
   desc 'clean duplicates from user table'
-  task :clean_duplicate_users => :environment do
+  task :clean_duplicate => :environment do
     start_time = Time.now
     user_count = User.count
     puts "task started at #{start_time} with #{user_count} users"

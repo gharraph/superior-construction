@@ -1,0 +1,7 @@
+<h1>All Materials</h1>
+
+<%= @aggregates.find_each do |aggregate| %>
+    <li>
+      <dev><%= aggregate.name %> | <%= aggregate.total_amount %><%= aggregate.unit %></dev>
+    </li>
+<%end%>
